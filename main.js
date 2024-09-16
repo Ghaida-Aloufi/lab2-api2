@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   let deleteImage = (id, element) => {
-    fetch(`https://66e7e69bb17821a9d9da6eab.mockapi.io/login/${id}`, { 
+    fetch(`https://66e7e69bb17821a9d9da6eab.mockapi.io/login/${element.id}`, { 
       method: 'DELETE' })
       .then(response => response.json())
       .then(() => element.remove())
