@@ -10,7 +10,7 @@ body {
 
 .box {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 40%;
   height: 50%;
   justify-content: center;
@@ -62,8 +62,7 @@ h1 {
 .image {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 15px;
   justify-content: center;
 }
