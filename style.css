@@ -1,17 +1,26 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #e8dcdc;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100%;
   margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .container {
   background-color: #d0bfbf;
+  margin-top: 200px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 7px 2px 8px rgb(10 10 10 / 33%);
@@ -33,7 +42,7 @@ h1 {
   width: 80%;
   padding: 10px;
   border-radius: 4px;
-
+  border: 1px solid #ccc;
 }
 
 .btn2 {
@@ -41,17 +50,25 @@ h1 {
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn2:hover {
+  background-color: #444;
 }
 
 .image {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
 
-.image div {
+.image-item {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
@@ -59,4 +76,42 @@ h1 {
   text-align: center;
   width: 100%;
   max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.image-item:hover {
+  transform: scale(1.03);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.image-item .image-name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #464444;
+}
+
+.image-item .delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.image-item .delete-btn:hover {
+  background-color: #e3aee8;
+
 }
